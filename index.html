@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="icon" type="image/png" href="assets/hat_white.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- MOBILE NAV -->
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#about">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#food-menu-section">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+    <!-- END MOBILE NAV -->
+    <!-- BACK TO TOP BTN -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- END BACK TO TOP BTN -->
+    <!-- TOP NAVIGATION -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="#home">
+                <div class="logo">
+                    <img src="assets/foodie.png" alt="Foodie" class="logo-img">
+                </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="#home">
+                    <div class="menu-item active">
+                        Home
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="menu-item">
+                        About
+                    </div>
+                </a>
+                <a href="#food-menu-section">
+                    <div class="menu-item">
+                        Menu
+                    </div>
+                </a>
+                <a href="#testimonial">
+                    <div class="menu-item">
+                        Testimonials
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="bx bx-sun" id="theme-icon"></i>
+                </div>
+                <div class="cart-btn" id="main-cart-btn">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION -->
+    <!-- SECTION HOME -->
+    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed"
+        style="background-image: url(img/ff2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <div class="slogan">
+                        <h1 class="left-to-right play-on-scroll">
+                            Foodie - Taste of Africa
+                        </h1>
+                        <p class="left-to-right play-on-scroll delay-2">
+                            Discover the rich and diverse flavors of African cuisine. From spicy West African jollof rice to savory North African tagines, experience authentic recipes passed down through generations. Our menu celebrates the vibrant culinary heritage of the African continent.
+                        </p>
+                        <div class="left-to-right play-on-scroll delay-4">
+                            <button>
+                                Order now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION HOME -->
+    <!-- SECION ABOUT -->
+    <section class="about fullheight align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 h-xs">
+                    <img src="assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt=""
+                        class="fullwidth left-to-right play-on-scroll">
+                </div>
+                <div class="col-5 col-xs-12 align-items-center">
+                    <div class="about-slogan right-to-left play-on-scroll">
+                        <h3>
+                            <span class="primary-color">We</span> bring <span class="primary-color">authentic</span>
+                            African flavors to <span class="primary-color">your table</span>
+                        </h3>
+                        <p>
+                            Experience the warmth and richness of African hospitality through our carefully curated menu. 
+                            Each dish tells a story of tradition, culture, and the incredible diversity of African cuisine. 
+                            From the aromatic spices of Ethiopia to the hearty stews of Ghana, we celebrate the continent's culinary heritage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECION ABOUT -->
+    <!-- FOOD MENU SECTION -->
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    What African <span class="primary-color">delicacy</span> will you enjoy today?
+                </h1>
+                <p>
+                    Explore our authentic African menu featuring traditional dishes from across the continent. 
+                    From aromatic stews and grilled meats to flavorful rice dishes and fresh salads, 
+                    each meal is prepared with traditional spices and cooking methods passed down through generations.
+                </p>
+                <div class="food-category">
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">
+                            All Dishes
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-2">
+                        <button data-food-type="salad">
+                            Salads & Sides
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-4">
+                        <button data-food-type="lorem">
+                            Rice & Grains
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-6">
+                        <button data-food-type="ipsum">
+                            Grilled & Meat
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="dolor">
+                            Stews & Soups
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item-wrap all">
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Kachumbari Salad
+                                    </h3>
+                                    <span>
+                                        5,100 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Kachumbari Salad" data-price="8.50" data-image="assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Jollof Rice
+                                    </h3>
+                                    <span>
+                                        9,600 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Jollof Rice" data-price="15.99" data-image="assets/sina-piryae-bBzjWthTqb8-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item ipsum-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Nyama Choma
+                                    </h3>
+                                    <span>
+                                        11,400 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Nyama Choma" data-price="18.99" data-image="assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Thieboudienne
+                                    </h3>
+                                    <span>
+                                        9,000 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Thieboudienne" data-price="14.99" data-image="assets/sina-piryae-bBzjWthTqb8-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Tagine Moroccan Stew
+                                    </h3>
+                                    <span>
+                                        13,800 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Tagine Moroccan Stew" data-price="22.99" data-image="assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Sukuma Wiki
+                                    </h3>
+                                    <span>
+                                        6,600 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Sukuma Wiki" data-price="10.99" data-image="assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Pilau Rice
+                                    </h3>
+                                    <span>
+                                        10,200 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Pilau Rice" data-price="16.99" data-image="assets/sina-piryae-bBzjWthTqb8-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Bobotie Casserole
+                                    </h3>
+                                    <span>
+                                        12,000 CFA
+                                    </span>
+                                </div>
+                                <div class="cart-btn" data-name="Bobotie Casserole" data-price="19.99" data-image="assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FOOD MENU SECTION -->
+    <!-- TESTIMONIAL SECTION -->
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-xs-12">
+                    <div class="zoom play-on-scroll delay-2">
+                        <div class="review-wrap">
+                            <div class="review-content">
+                                <p>
+                                    The Jollof Rice at Foodie is absolutely authentic! It reminded me of my grandmother's cooking back in Lagos. The perfect blend of spices and the smoky flavor transported me home. This is real African cuisine at its finest!
+                                </p>
+                                <div class="review-img bg-img"
+                                    style="background-image: url(assets/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);">
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h3>
+                                    Amara Okafor
+                                </h3>
+                                <div class="rating">
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <div class="zoom play-on-scroll">
+                        <div class="review-wrap active">
+                            <div class="review-content">
+                                <p>
+                                    I've traveled across Africa, and this Tagine is as good as any I had in Marrakech! The meat falls off the bone, and the blend of North African spices is perfection. Foodie brings authentic flavors to every dish.
+                                </p>
+                                <div class="review-img bg-img"
+                                    style="background-image: url(assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);">
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h3>
+                                    Kwame Asante
+                                </h3>
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <div class="zoom play-on-scroll delay-4">
+                        <div class="review-wrap">
+                            <div class="review-content">
+                                <p>
+                                    The Nyama Choma here is incredible! Perfectly grilled and seasoned just like back home in Kenya. Combined with their Sukuma Wiki, it's a complete East African experience. I'm definitely coming back for more!
+                                </p>
+                                <div class="review-img bg-img"
+                                    style="background-image: url(assets/portrait-happy-young-man_171337-21716.jpg);">
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h3>
+                                    Samuel Mwangi
+                                </h3>
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTIMONIAL SECTION -->
+    <!-- APP DOWNLOAD SECTION -->
+    <section id="app-download" class="app-download-section">
+        <div class="container">
+            <div class="app-download-content">
+                <div class="app-info">
+                    <h1>Download our app now!</h1>
+                    <p>Get exciting offers exclusively on our app.</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-store-btn">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                        </a>
+                        <a href="#" class="google-play-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="app-mockup">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-interface">
+                                <!-- Screen 1: Menu Browse with Loading -->
+                                <div class="app-screen active" id="screen-menu">
+                                    <div class="app-header">
+                                        <div class="location-info">
+                                            <i class="bx bx-map location-pin"></i>
+                                            <span class="address">Accra, Ghana</span>
+                                            <i class="bx bx-chevron-down"></i>
+                                        </div>
+                                        <div class="header-actions">
+                                            <i class="bx bx-bell notification-bell"></i>
+                                            <div class="notification-dot"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="search-container">
+                                        <div class="search-bar">
+                                            <i class="bx bx-search"></i>
+                                            <input type="text" placeholder="Search African dishes..." class="search-input">
+                                            <div class="search-loader"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="promo-card">
+                                        <div class="promo-content">
+                                            <div class="promo-text">
+                                                <h3>35% OFF</h3>
+                                                <p>On orders above 15,000 CFA</p>
+                                            </div>
+                                            <div class="promo-timer">
+                                                <span class="timer-text">Ends in:</span>
+                                                <div class="timer-digits">
+                                                    <span class="digit">2</span>
+                                                    <span class="separator">:</span>
+                                                    <span class="digit">45</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="promo-waves"></div>
+                                    </div>
+                                    
+                                    <div class="featured-dish-card">
+                                        <div class="dish-image-container">
+                                            <div class="dish-image">
+                                                <img src="assets/sina-piryae-bBzjWthTqb8-unsplash.jpg" alt="Joll of Rice Special">
+                                                <div class="floating-price">6,000 CFA</div>
+                                            </div>
+                                            <div class="like-button">
+                                                <i class="bx bx-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dish-details">
+                                            <div class="dish-info">
+                                                <h4>Joll of Rice Special</h4>
+                                                <div class="rating">
+                                                    <span class="stars">★★★★★</span>
+                                                    <span class="rating-text">4.8 (120 reviews)</span>
+                                                </div>
+                                                <p class="description">Authentic West African jollof with grilled chicken</p>
+                                            </div>
+                                            <button class="add-btn">
+                                                <i class="bx bx-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Screen 2: Adding to Cart Animation -->
+                                <div class="app-screen" id="screen-adding">
+                                    <div class="app-header">
+                                        <i class="bx bx-arrow-back"></i>
+                                        <span>Joll of Rice Special</span>
+                                        <i class="bx bx-share-alt"></i>
+                                    </div>
+                                    
+                                    <div class="adding-animation-container">
+                                        <div class="dish-preview">
+                                            <div class="dish-image-large">
+                                                <img src="assets/sina-piryae-bBzjWthTqb8-unsplash.jpg" alt="Joll of Rice Special" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="quantity-selector">
+                                            <span>Quantity</span>
+                                            <div class="quantity-controls-fancy">
+                                                <button class="qty-btn minus">−</button>
+                                                <span class="quantity-display">2</span>
+                                                <button class="qty-btn plus">+</button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="cart-summary">
+                                            <div class="summary-item">
+                                                <span>2 x Joll of Rice Special</span>
+                                                <span>12,000 CFA</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <button class="add-to-cart-fancy">
+                                            <span class="btn-text">Add to Cart</span>
+                                            <div class="btn-loader"></div>
+                                            <i class="bx bx-check btn-success"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Screen 3: Order Tracking with Live Updates -->
+                                <div class="app-screen" id="screen-tracking">
+                                    <div class="app-header">
+                                        <i class="bx bx-arrow-back"></i>
+                                        <span>Track Order</span>
+                                        <i class="bx bx-phone"></i>
+                                    </div>
+                                    
+                                    <div class="order-card">
+                                        <div class="order-header">
+                                            <div class="order-info">
+                                                <h3>Order #FD2024</h3>
+                                            </div>
+                                            <div class="order-time">
+                                                <span class="estimated-time">
+                                                    <span class="time-number">20</span>
+                                                    <span class="time-unit">min</span>
+                                                </span>
+                                                <span class="time-label">Estimated</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="kitchen-section">
+                                            <div class="kitchen-title">
+                                                <span class="kitchen-text">In Kitchen</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="delivery-map">
+                                            <div class="map-container">
+                                                <div class="delivery-path">
+                                                    <div class="path-line"></div>
+                                                    <div class="restaurant-pin">
+                                                        <i class="bx bx-store"></i>
+                                                    </div>
+                                                    <div class="driver-pin">
+                                                        <i class="bx bx-car"></i>
+                                                    </div>
+                                                    <div class="destination-pin">
+                                                        <i class="bx bx-home"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tracking-timeline">
+                                            <div class="timeline-item completed">
+                                                <div class="timeline-icon">
+                                                    <i class="bx bx-check"></i>
+                                                    <div class="timeline-animation"></div>
+                                                </div>
+                                                <div class="timeline-content">
+                                                    <h4>Order Confirmed</h4>
+                                                    <span>2:15 PM</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="timeline-item active">
+                                                <div class="timeline-icon">
+                                                    <i class="bx bx-loader-alt"></i>
+                                                    <div class="timeline-animation active"></div>
+                                                </div>
+                                                <div class="timeline-content">
+                                                    <h4>Preparing Food</h4>
+                                                    <span>Est. 2:35 PM</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="timeline-item">
+                                                <div class="timeline-icon">
+                                                    <i class="bx bx-car"></i>
+                                                    <div class="timeline-animation"></div>
+                                                </div>
+                                                <div class="timeline-content">
+                                                    <h4>On the Way</h4>
+                                                    <span>Est. 2:45 PM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END APP DOWNLOAD SECTION -->
+    <!-- FOOTER SECTION -->
+    <section class="footer bg-img" style="background-image: url(assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-xs-12">
+                    <div class="footer-empty-space"></div>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1>
+                        Explore
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Our Chefs
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            African Menu
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            Customer Reviews
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            Catering Services
+                        </a>
+                    </p>
+                </div>
+                <div class="col-5 col-xs-12">
+                    <h1>
+                        Foodie - African Cuisine
+                    </h1>
+                    <br>
+                    <p>Bringing you the authentic taste of Africa with traditional recipes from across the continent. 
+                        From West African Jollof to East African Nyama Choma, every dish tells a story of heritage and flavor.
+                        Experience the warmth of African hospitality through our carefully prepared meals.</p>
+                    <br>
+                    <p>Email: hello@foodie-africa.com</p>
+                    <p>Phone: +254712080741</p>
+                    <p>Website: foodie-africa.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+    <!-- CART MODAL -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: <span id="cart-total">0 CFA</span></strong>
+                </div>
+                <div class="minimum-order-notice" id="minimum-order-notice" style="display: none;">
+                    <small>⚠️ Minimum order amount is 12,000 CFA</small>
+                </div>
+                <div class="cart-actions">
+                    <button class="clear-cart-btn" id="clear-cart">Clear Cart</button>
+                    <button class="checkout-btn" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CART MODAL -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
